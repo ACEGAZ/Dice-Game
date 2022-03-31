@@ -337,6 +337,8 @@ function showhideD20Game() {
     document.getElementById('d20-win-lose-draw').remove();
    }
 }
-    
- 
 
+//reload page to restart the game//
+function restartGame() { 
+    window.location.reload()   
+   }
