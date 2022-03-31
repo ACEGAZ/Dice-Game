@@ -5,8 +5,11 @@
 }
 
 /* body*/
-body {
-    
+body {    
 background: linear-gradient(0.25turn, #017483, #ebf8e1, #7dd7dd);
+}
 
+/* to hide all dice games until a game is selected*/
+.all-dice-games {
+    display: none;
 }
