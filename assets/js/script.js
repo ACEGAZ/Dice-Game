@@ -185,3 +185,11 @@ function showhideD10Game() {
     document.getElementById('d10-win-lose-draw').remove();
    }
 }
+
+//20 sided dice game//
+
+//show 20 sided dice game and hide start menu//
+function showhideD20Game() {
+    document.getElementById('d20-game').style.display = 'block';
+    document.getElementById('start-menu').style.display = 'none';
+  } 
