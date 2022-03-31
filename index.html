@@ -36,3 +36,37 @@
   
   </section>
   
+  <!--d6 dice game-->
+  <section id="d6-game" class="all-dice-games">
+    <h1>D6 Dice Game</h1>
+
+    <div class="all-games-player-wrapper">
+      <div id="d6-player">Player |</div>
+      <div id="d6-computer">Comp</div>
+  </div>
+
+    <div id="d6-winner-loser" class="all-games-winner-loser"></div>
+
+    <div id="d6-scores-wrapper">
+      <div id="d6-player-score">0</div>
+      <div id="d6-computer-score">0</div>
+</div>
+
+
+    <div class="d6-roll-button-wrapper">
+      <button id="d6-roll-button"  onclick="playD6Game()">Roll</button>
+</div>
+
+    <div id="d6-result-wrapper">
+        <div id="d6-player-result">
+          <img id="d6-dice-image-one" src="assets/images/d6(1).png">
+</div>
+        <div id="d6-computer-result">
+          <img id="d6-dice-image-two" src="assets/images/d6(1).png">
+</div>
+
+</div>
+
+    <div id="d6-win-lose-draw"></div>
+    <button class="restart" onclick="restartGame()">Restart</button>
+</section>
