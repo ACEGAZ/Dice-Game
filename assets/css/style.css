@@ -75,3 +75,9 @@ button {
 #d6-result-wrapper, #d10-result-wrapper, #d20-result-wrapper{
     display: inline-flex;
 }
+
+/* images*/
+img{
+    width: 100px;
+    height: 100px;
+}
