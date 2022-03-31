@@ -83,3 +83,11 @@ function playD6Game(){
     document.getElementById('d6-win-lose-draw').remove();
 }
 }
+
+//10 sided dice game//
+
+//show 10 sided dice game and hide start menu//
+function showhideD10Game() {
+    document.getElementById('d10-game').style.display = 'block';
+    document.getElementById('start-menu').style.display = 'none';
+  } 
