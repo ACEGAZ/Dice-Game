@@ -64,4 +64,14 @@ button {
     width: 200px;
     cursor: pointer;
     font-size: 30px;
-  }
+}
+
+  /* roll-button for all games*/
+  #d6-roll-button, #d10-roll-button, #d20-roll-button {
+    margin-bottom:30px ;
+}
+
+/* results wrapper for all games*/
+#d6-result-wrapper, #d10-result-wrapper, #d20-result-wrapper{
+    display: inline-flex;
+}
