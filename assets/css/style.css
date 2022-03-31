@@ -1,0 +1,12 @@
+*{
+    text-align: center;
+    color: rgb(14, 62, 85);
+    font-size: 40px;
+}
+
+/* body*/
+body {
+    
+background: linear-gradient(0.25turn, #017483, #ebf8e1, #7dd7dd);
+
+}
