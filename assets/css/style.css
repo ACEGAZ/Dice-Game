@@ -37,3 +37,14 @@ h1 {
     font-size: 50px;
     font-weight: 300;
 }
+
+/* scores wrapper for all games*/
+#d6-scores-wrapper, #d10-scores-wrapper, #d20-scores-wrapper {
+    display: inline-flex;
+}
+
+/* player score for all games*/
+#d6-player-score, #d10-player-score, #d20-player-score  {
+    margin-right:  70px;
+    margin-bottom: 30px;
+}
