@@ -25,3 +25,15 @@ h1 {
     margin-top: 30px;
     margin-bottom: 50px;
 }
+
+/* player div for all gmaes*/
+#d6-player, #d10-player, #d20-player {
+    margin-right: 5px;
+}
+
+/* winner-loser */
+.all-games-winner-loser{
+    color: rgba(133, 7, 133, 0.603);
+    font-size: 50px;
+    font-weight: 300;
+}
