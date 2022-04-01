@@ -1,12 +1,12 @@
-*{
+* {
     text-align: center;
     color: rgb(14, 62, 85);
     font-size: 40px;
 }
 
 /* body*/
-body {    
-background: linear-gradient(0.25turn, #017483, #ebf8e1, #7dd7dd);
+body {
+    background: linear-gradient(0.25turn, #017483, #ebf8e1, #7dd7dd);
 }
 
 /* to hide all dice games until a game is selected*/
@@ -25,38 +25,46 @@ p {
 }
 
 /* player and comp wrapper for all games*/
-.all-games-player-wrapper{
+.all-games-player-wrapper {
     display: inline-flex;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
 /* player div for all gmaes*/
-#d6-player, #d10-player, #d20-player {
+#d6-player,
+#d10-player,
+#d20-player {
     margin-right: 5px;
 }
 
 /* winner-loser */
-.all-games-winner-loser{
+.all-games-winner-loser {
     color: rgba(133, 7, 133, 0.603);
     font-size: 50px;
     font-weight: 300;
 }
 
 /* scores wrapper for all games*/
-#d6-scores-wrapper, #d10-scores-wrapper, #d20-scores-wrapper {
+#d6-scores-wrapper,
+#d10-scores-wrapper,
+#d20-scores-wrapper {
     display: inline-flex;
 }
 
 /* player score for all games*/
-#d6-player-score, #d10-player-score, #d20-player-score  {
-    margin-right:  70px;
+#d6-player-score,
+#d10-player-score,
+#d20-player-score {
+    margin-right: 70px;
     margin-bottom: 30px;
 }
 
 /* computer score for all games*/
-#d6-computer-score, #d10-computer-score, #d20-computer-score {
-    margin-left:  30px;
+#d6-computer-score,
+#d10-computer-score,
+#d20-computer-score {
+    margin-left: 30px;
 }
 
 /* all buttons */
@@ -71,42 +79,52 @@ button {
     font-size: 30px;
 }
 
-  /* roll-button for all games*/
-  #d6-roll-button, #d10-roll-button, #d20-roll-button {
-    margin-bottom:30px ;
+/* roll-button for all games*/
+#d6-roll-button,
+#d10-roll-button,
+#d20-roll-button {
+    margin-bottom: 30px;
 }
 
 /* results wrapper for all games*/
-#d6-result-wrapper, #d10-result-wrapper, #d20-result-wrapper{
+#d6-result-wrapper,
+#d10-result-wrapper,
+#d20-result-wrapper {
     display: inline-flex;
 }
 
 /* images*/
-img{
+img {
     width: 100px;
     height: 100px;
 }
 
 /* media query for tablets from 600px up*/
 @media only screen and (min-width: 600px) {
-    #start-menu, h1 {
-      font-size:50px ;
-      margin-top: 10px;
+
+    #start-menu,
+    h1 {
+        font-size: 50px;
+        margin-top: 10px;
     }
 
-    #start-menu, p {
+    #start-menu,
+    p {
         font-size: 30px;
     }
-  }
+}
 
-  /* media query for laptops from 1200px up*/
-  @media only screen and (min-width: 1200px) {
-    #start-menu, h1 {
-      font-size:80px ;
-      margin-top: 10px;
+/* media query for laptops from 1200px up*/
+@media only screen and (min-width: 1200px) {
+
+    #start-menu,
+    h1 {
+        font-size: 80px;
+        margin-top: 10px;
     }
 
-    #start-menu, p {
+    #start-menu,
+    p {
         font-size: 40px;
     }
-  }
+}
