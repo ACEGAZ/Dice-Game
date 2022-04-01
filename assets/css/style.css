@@ -87,6 +87,7 @@ img{
     height: 100px;
 }
 
+/* media query for tablets from 600px up*/
 @media only screen and (min-width: 600px) {
     #start-menu, h1 {
       font-size:50px ;
@@ -98,6 +99,7 @@ img{
     }
   }
 
+  /* media query for laptops from 1200px up*/
   @media only screen and (min-width: 1200px) {
     #start-menu, h1 {
       font-size:80px ;

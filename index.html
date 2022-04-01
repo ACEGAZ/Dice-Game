@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width,
                    initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Dice Game</title>
-</head>
+  </head>
 
-<body>
+  <body>
 
     <!--start menu-->
   
@@ -24,122 +24,123 @@
     
       <div id="d6-game-start">
         <button onclick=" showhideD6Game()">D6</button>
-    </div> 
+      </div> 
   
       <div id="d10-game-start">
         <button onclick="showhideD10Game()">D10</button>
-    </div>
+      </div>
   
       <div  id="d20-game-start">
         <button onclick="showhideD20Game()">D20</button>
-    </div>
+      </div>
   
-  </section>
+    </section>
   
   <!--d6 dice game-->
-  <section id="d6-game" class="all-dice-games">
-    <h1>D6 Dice Game</h1>
+    <section id="d6-game" class="all-dice-games">
+      <h1>D6 Dice Game</h1>
 
-    <div class="all-games-player-wrapper">
-      <div id="d6-player">Player |</div>
-      <div id="d6-computer">Comp</div>
-</div>
+      <div class="all-games-player-wrapper">
+        <div id="d6-player">Player |</div>
+        <div id="d6-computer">Comp</div>
+      </div>
 
-    <div id="d6-winner-loser" class="all-games-winner-loser"></div>
+      <div id="d6-winner-loser" class="all-games-winner-loser"></div>
 
-    <div id="d6-scores-wrapper">
-      <div id="d6-player-score">0</div>
-      <div id="d6-computer-score">0</div>
-</div>
+      <div id="d6-scores-wrapper">
+        <div id="d6-player-score">0</div>
+        <div id="d6-computer-score">0</div>
+      </div>
 
+      <div class="d6-roll-button-wrapper">
+        <button id="d6-roll-button"  onclick="playD6Game()">Roll</button>
+      </div>
 
-    <div class="d6-roll-button-wrapper">
-      <button id="d6-roll-button"  onclick="playD6Game()">Roll</button>
-</div>
-
-    <div id="d6-result-wrapper">
+      <div id="d6-result-wrapper">
         <div id="d6-player-result">
           <img id="d6-dice-image-one" src="assets/images/d6(1).png">
-</div>
+        </div>
+
         <div id="d6-computer-result">
           <img id="d6-dice-image-two" src="assets/images/d6(1).png">
-</div>
+        </div>
 
-</div>
+      </div>
 
-    <div id="d6-win-lose-draw"></div>
-    <button class="restart" onclick="restartGame()">Restart</button>
-</section>
+      <div id="d6-win-lose-draw"></div>
+      <button class="restart" onclick="restartGame()">Restart</button>
+    </section>
 
 <!--d10 dice game-->
-<section id="d10-game" class="all-dice-games">
-    <h1>D10 Dice Game</h1>
+    <section id="d10-game" class="all-dice-games">
+      <h1>D10 Dice Game</h1>
 
-    <div class="all-games-player-wrapper">
-      <div id="d10-player">Player |</div>
-      <div id="d10-computer">Comp</div>
-</div>
+      <div class="all-games-player-wrapper">
+        <div id="d10-player">Player |</div>
+        <div id="d10-computer">Comp</div>
+      </div>
 
-    <div id="d10-winner-loser" class="all-games-winner-loser"></div>
+      <div id="d10-winner-loser" class="all-games-winner-loser"></div>
 
-    <div id="d10-scores-wrapper">
-      <div id="d10-player-score">0</div>
-      <div id="d10-computer-score">0</div>
-</div>
+      <div id="d10-scores-wrapper">
+        <div id="d10-player-score">0</div>
+        <div id="d10-computer-score">0</div>
+      </div>
 
 
-    <div class="d10-roll-button-wrapper">
-      <button id="d10-roll-button" onclick="playD10Game()">Roll</button>
-</div>
+      <div class="d10-roll-button-wrapper">
+        <button id="d10-roll-button" onclick="playD10Game()">Roll</button>
+      </div>
 
-    <div id="d10-result-wrapper">
-      <div id="d10-player-result">
-        <img id="d10-dice-image-one" src="assets/images/d10(1).png">
-</div>
-      <div id="d10-computer-result">
-        <img id="d10-dice-image-two" src="assets/images/d10(1).png">
-</div>
+      <div id="d10-result-wrapper">
+        <div id="d10-player-result">
+          <img id="d10-dice-image-one" src="assets/images/d10(1).png">
+        </div>
 
-</div>
+        <div id="d10-computer-result">
+          <img id="d10-dice-image-two" src="assets/images/d10(1).png">
+        </div>
 
-    <div id="d10-win-lose-draw"></div>
-    <button class="restart" onclick="restartGame()">Restart</button>
-</section>
+      </div>
+
+      <div id="d10-win-lose-draw"></div>
+      <button class="restart" onclick="restartGame()">Restart</button>
+    </section>
 
 <!--d20 dice game-->
-<section id="d20-game" class="all-dice-games">
-    <h1>D20 Dice Game</h1>
+    <section id="d20-game" class="all-dice-games">
+      <h1>D20 Dice Game</h1>
 
-    <div class="all-games-player-wrapper">
-      <div id="d20-player">Player |</div>
-      <div id="d20-computer">Comp</div>
-</div>
+      <div class="all-games-player-wrapper">
+        <div id="d20-player">Player |</div>
+        <div id="d20-computer">Comp</div>
+      </div>
 
-    <div id="d20-winner-loser" class="all-games-winner-loser"></div>
+      <div id="d20-winner-loser" class="all-games-winner-loser"></div>
 
-    <div id="d20-scores-wrapper">
-      <div id="d20-player-score">0</div>
-      <div id="d20-computer-score">0</div>
-</div>
+      <div id="d20-scores-wrapper">
+        <div id="d20-player-score">0</div>
+        <div id="d20-computer-score">0</div>
+      </div>
 
 
-    <div class="d20-roll-button-wrapper">
-      <button id="d20-roll-button" onclick="playD20Game()">Roll</button>
-</div>
+      <div class="d20-roll-button-wrapper">
+        <button id="d20-roll-button" onclick="playD20Game()">Roll</button>
+      </div>
 
-    <div id="d20-result-wrapper">
-      <div id="d20-player-result">
-        <img id="d20-dice-image-one" src="assets/images/d20(1).png">
-</div>
-      <div id="d20-computer-result">
-        <img id="d20-dice-image-two" src="assets/images/d20(1).png">
-</div>
+      <div id="d20-result-wrapper">
+        <div id="d20-player-result">
+          <img id="d20-dice-image-one" src="assets/images/d20(1).png">
+        </div>
+        <div id="d20-computer-result">
+          <img id="d20-dice-image-two" src="assets/images/d20(1).png">
+        </div>
 
-</div>
+      </div>
 
-    <div id="d20-win-lose-draw"></div>
-    <button class="restart" onclick="restartGame()">Restart</button>
-</section>
+      <div id="d20-win-lose-draw"></div>
+      <button class="restart" onclick="restartGame()">Restart</button>
+    </section>
 
 <script src="assets/js/script.js"></script> 
 
