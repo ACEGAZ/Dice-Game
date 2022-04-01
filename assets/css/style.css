@@ -17,6 +17,11 @@ background: linear-gradient(0.25turn, #017483, #ebf8e1, #7dd7dd);
 /* h1*/
 h1 {
     margin-right: 10px;
+    font-size: 40px;
+}
+
+p {
+    font-size: 30px;
 }
 
 /* player and comp wrapper for all games*/
@@ -81,3 +86,14 @@ img{
     width: 100px;
     height: 100px;
 }
+
+@media only screen and (min-width: 600px) {
+    #start-menu, h1 {
+      font-size:50px ;
+      margin-top: 10px;
+    }
+
+    #start-menu, p {
+        font-size: 30px;
+    }
+  }
