@@ -13,11 +13,11 @@ function showhideD6Game () {
 
 //show 6 sided dice game and hide start menu//
 function playD6Game(){
-    let playerRoll = Math.floor(Math.random() * 6) + 1;
-    let computerRoll = Math.floor(Math.random() * 6) + 1;
+    let d6PlayerRoll = Math.floor(Math.random() * 6) + 1;
+    let d6ComputerRoll = Math.floor(Math.random() * 6) + 1;
       
 //d6 images//    
-    let diceImageArray = [
+    let d6DiceImageArray = [
                           img1 = 'assets/images/d6(1).png', 
                           img2 = 'assets/images/d6(2).png', 
                           img3 = 'assets/images/d6(3).png', 
@@ -26,42 +26,42 @@ function playD6Game(){
                           img6 = 'assets/images/d6(6).png']                    
 
 //display d6 images to player-result div//
-     if (playerRoll === 1) {
-    document.getElementById('d6-dice-image-one').src = diceImageArray[0]
-   } if (playerRoll === 2) {
-    document.getElementById('d6-dice-image-one').src = diceImageArray[1]
-   } if (playerRoll === 3) {
-    document.getElementById('d6-dice-image-one').src = diceImageArray[2]
-   } if (playerRoll === 4) {
-    document.getElementById('d6-dice-image-one').src = diceImageArray[3]
-   } if (playerRoll === 5) {
-    document.getElementById('d6-dice-image-one').src = diceImageArray[4]
-   } if (playerRoll === 6) {
-    document.getElementById('d6-dice-image-one').src = diceImageArray[5]
+     if (d6PlayerRoll === 1) {
+    document.getElementById('d6-dice-image-one').src = d6DiceImageArray[0];
+   } if (d6PlayerRoll === 2) {
+    document.getElementById('d6-dice-image-one').src = d6DiceImageArray[1];
+   } if (d6PlayerRoll === 3) {
+    document.getElementById('d6-dice-image-one').src = d6DiceImageArray[2];
+   } if (d6PlayerRoll === 4) {
+    document.getElementById('d6-dice-image-one').src = d6DiceImageArray[3];
+   } if (d6PlayerRoll === 5) {
+    document.getElementById('d6-dice-image-one').src = d6DiceImageArray[4];
+   } if (d6PlayerRoll === 6) {
+    document.getElementById('d6-dice-image-one').src = d6DiceImageArray[5];
 
   //display d6 images to computer-result div//  
-   } if (computerRoll === 1) {
-    document.getElementById('d6-dice-image-two').src = diceImageArray[0]
-   } if (computerRoll === 2) {
-    document.getElementById('d6-dice-image-two').src = diceImageArray[1]
-   } if (computerRoll === 3) {
-   document.getElementById('d6-dice-image-two').src = diceImageArray[2]
-   } if (computerRoll === 4) {
-   document.getElementById('d6-dice-image-two').src = diceImageArray[3]
-   } if (computerRoll === 5) {
-   document.getElementById('d6-dice-image-two').src = diceImageArray[4]
-   } if (computerRoll === 6) {
-   document.getElementById('d6-dice-image-two').src = diceImageArray[5]
+   } if (d6ComputerRoll === 1) {
+    document.getElementById('d6-dice-image-two').src = d6DiceImageArray[0];
+   } if (d6ComputerRoll === 2) {
+    document.getElementById('d6-dice-image-two').src = d6DiceImageArray[1];
+   } if (d6ComputerRoll === 3) {
+    document.getElementById('d6-dice-image-two').src = d6DiceImageArray[2];
+   } if (d6ComputerRoll === 4) {
+    document.getElementById('d6-dice-image-two').src = d6DiceImageArray[3];
+   } if (d6ComputerRoll === 5) {
+    document.getElementById('d6-dice-image-two').src = d6DiceImageArray[4];
+   } if (d6ComputerRoll === 6) {
+    document.getElementById('d6-dice-image-two').src = d6DiceImageArray[5];
 }
    
 //determin if player has won or lost d6 game and remove elements to display win or lose message//
-   if (playerRoll > computerRoll) {
+   if (d6PlayerRoll > d6ComputerRoll) {
        document.getElementById('d6-win-lose-draw').innerHTML = 'Win';
        document.getElementById('d6-player-score').innerHTML = playerScore++;
-   } else if (playerRoll < computerRoll) { 
+   } else if (d6PlayerRoll < d6ComputerRoll) { 
     document.getElementById('d6-win-lose-draw').innerHTML = 'Lose';
     document.getElementById('d6-computer-score').innerHTML = computerScore++;
-   } else if (playerRoll === computerRoll) {
+   } else if (d6PlayerRoll === d6ComputerRoll) {
     document.getElementById('d6-win-lose-draw').innerHTML = 'Draw';
    } if (playerScore === 11) {
     document.getElementById('d6-winner-loser').innerHTML = 'You Win The Game!';
@@ -69,7 +69,7 @@ function playD6Game(){
     document.getElementById('d6-player').remove();
     document.getElementById('d6-computer').remove();
     document.getElementById('d6-scores-wrapper').remove();
-    document.getElementById('d6-result-wrapper').remove();;
+    document.getElementById('d6-result-wrapper').remove();
     document.getElementById('d6-win-lose-draw').remove();
    } 
    
@@ -94,11 +94,11 @@ function showhideD10Game() {
 
   //play d10 game//
   function playD10Game(){
-    let playerRoll = Math.floor(Math.random() * 10) + 1;
-    let computerRoll = Math.floor(Math.random() * 10) + 1;
+    let d10PlayerRoll = Math.floor(Math.random() * 10) + 1;
+    let d10ComputerRoll = Math.floor(Math.random() * 10) + 1;
   
 //d10 images//    
-    let diceImageArray = [
+    let d10DiceImageArray = [
                           img1 = 'assets/images/d10(1).png', 
                           img2 = 'assets/images/d10(2).png', 
                           img3 = 'assets/images/d10(3).png', 
@@ -111,59 +111,59 @@ function showhideD10Game() {
                           img10 = 'assets/images/d10(10).png']                  
 
 //display d10 images to player-result div//
-     if (playerRoll === 1) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[0]
-   } if (playerRoll === 2) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[1]
-   } if (playerRoll === 3) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[2]
-   } if (playerRoll === 4) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[3]
-   } if (playerRoll === 5) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[4]
-   } if (playerRoll === 6) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[5]
-   } if (playerRoll === 7) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[6]
-   } if (playerRoll === 8) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[7]
-   } if (playerRoll === 9) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[8]
-   } if (playerRoll === 10) {
-    document.getElementById('d10-dice-image-one').src = diceImageArray[9]
+     if (d10PlayerRoll === 1) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[0];
+   } if (d10PlayerRoll === 2) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[1];
+   } if (d10PlayerRoll === 3) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[2];
+   } if (d10PlayerRoll === 4) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[3];
+   } if (d10PlayerRoll === 5) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[4];
+   } if (d10PlayerRoll === 6) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[5];
+   } if (d10PlayerRoll === 7) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[6];
+   } if (d10PlayerRoll === 8) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[7];
+   } if (d10PlayerRoll === 9) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[8];
+   } if (d10PlayerRoll === 10) {
+    document.getElementById('d10-dice-image-one').src = d10DiceImageArray[9];
    
 
 //display d10 images to computer-result div//
-   } if (computerRoll === 1) {
-    document.getElementById('d10-dice-image-two').src = diceImageArray[0]
-   } if (computerRoll === 2) {
-    document.getElementById('d10-dice-image-two').src = diceImageArray[1]
-   } if (computerRoll === 3) {
-   document.getElementById('d10-dice-image-two').src = diceImageArray[2]
-   } if (computerRoll === 4) {
-   document.getElementById('d10-dice-image-two').src = diceImageArray[3]
-   } if (computerRoll === 5) {
-   document.getElementById('d10-dice-image-two').src = diceImageArray[4]
-   } if (computerRoll === 6) {
-   document.getElementById('d10-dice-image-two').src = diceImageArray[5]
-   } if (computerRoll === 7) {
-    document.getElementById('d10-dice-image-two').src = diceImageArray[6]
-   } if (computerRoll === 8) {
-    document.getElementById('d10-dice-image-two').src = diceImageArray[7]
-   } if (computerRoll === 9) {
-    document.getElementById('d10-dice-image-two').src = diceImageArray[8]
-   }if (computerRoll === 10) {
-    document.getElementById('d10-dice-image-two').src = diceImageArray[9]
+   } if (d10ComputerRoll === 1) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[0];
+   } if (d10ComputerRoll === 2) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[1];
+   } if (d10ComputerRoll === 3) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[2];
+   } if (d10ComputerRoll === 4) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[3];
+   } if (d10ComputerRoll === 5) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[4];
+   } if (d10ComputerRoll === 6) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[5];
+   } if (d10ComputerRoll === 7) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[6];
+   } if (d10ComputerRoll === 8) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[7];
+   } if (d10ComputerRoll === 9) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[8];
+   }if (d10ComputerRoll === 10) {
+    document.getElementById('d10-dice-image-two').src = d10DiceImageArray[9];
    }
   
 //determin if player has won or lost d10 game and remove elements to display win or lose message//
-   if (playerRoll > computerRoll) {
+   if (d10PlayerRoll > d10ComputerRoll) {
        document.getElementById('d10-win-lose-draw').innerHTML = 'Win';
        document.getElementById('d10-player-score').innerHTML = playerScore++;
-   } else if (playerRoll < computerRoll) { 
+   } else if (d10PlayerRoll < d10ComputerRoll) { 
     document.getElementById('d10-win-lose-draw').innerHTML = 'Lose';
     document.getElementById('d10-computer-score').innerHTML = computerScore++;
-   } else if (playerRoll === computerRoll) {
+   } else if (d10PlayerRoll === d10ComputerRoll) {
     document.getElementById('d10-win-lose-draw').innerHTML = 'Draw';
    } if (playerScore === 11) {
     document.getElementById('d10-winner-loser').innerHTML = 'You Win The Game!';
@@ -196,11 +196,11 @@ function showhideD20Game() {
 
   //play d20 game//
   function playD20Game(){
-    let playerRoll = Math.floor(Math.random() * 20) + 1;
-    let computerRoll = Math.floor(Math.random() * 20) + 1;
+    let d20PlayerRoll = Math.floor(Math.random() * 20) + 1;
+    let d20ComputerRoll = Math.floor(Math.random() * 20) + 1;
      
 //d20 images//
-    let diceImageArray = [
+    let d20DiceImageArray = [
                           img1 = 'assets/images/d20(1).png', 
                           img2 = 'assets/images/d20(2).png', 
                           img3 = 'assets/images/d20(3).png', 
@@ -223,99 +223,99 @@ function showhideD20Game() {
                           img20 = 'assets/images/d20(20).png']                  
 
 //display d20 images to player-result div//
-     if (playerRoll === 1) {
-       document.getElementById('d20-dice-image-one').src = diceImageArray[0]
-   } if (playerRoll === 2) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[1]
-   } if (playerRoll === 3) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[2]
-   } if (playerRoll === 4) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[3]
-   } if (playerRoll === 5) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[4]
-   } if (playerRoll === 6) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[5]
-   } if (playerRoll === 7) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[6]
-   } if (playerRoll === 8) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[7]
-   } if (playerRoll === 9) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[8]
-   } if (playerRoll === 10) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[9]
-   } if (playerRoll === 11) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[10]
-   } if (playerRoll === 12) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[11]
-   } if (playerRoll === 13) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[12]
-   } if (playerRoll === 14) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[13]
-   } if (playerRoll === 15) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[14]
-   } if (playerRoll === 16) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[15]
-   } if (playerRoll === 17) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[16]
-   } if (playerRoll === 18) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[17]
-   } if (playerRoll === 19) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[18]
-   }if (playerRoll === 20) {
-    document.getElementById('d20-dice-image-one').src = diceImageArray[19]
+     if (d20PlayerRoll === 1) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[0];
+   } if (d20PlayerRoll === 2) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[1];
+   } if (d20PlayerRoll === 3) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[2];
+   } if (d20PlayerRoll === 4) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[3];
+   } if (d20PlayerRoll === 5) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[4];
+   } if (d20PlayerRoll === 6) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[5];
+   } if (d20PlayerRoll === 7) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[6];
+   } if (d20PlayerRoll === 8) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[7];
+   } if (d20PlayerRoll === 9) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[8];
+   } if (d20PlayerRoll === 10) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[9];
+   } if (d20PlayerRoll === 11) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[10];
+   } if (d20PlayerRoll === 12) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[11];
+   } if (d20PlayerRoll === 13) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[12];
+   } if (d20PlayerRoll === 14) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[13];
+   } if (d20PlayerRoll === 15) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[14];
+   } if (d20PlayerRoll === 16) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[15];
+   } if (d20PlayerRoll === 17) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[16];
+   } if (d20PlayerRoll === 18) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[17];
+   } if (d20PlayerRoll === 19) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[18];
+   }if (d20PlayerRoll === 20) {
+    document.getElementById('d20-dice-image-one').src = d20DiceImageArray[19];
    } 
 
   //display d20 images to computer-result div// 
-   if (computerRoll === 1) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[0]
-   } if (computerRoll === 2) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[1]
-   } if (computerRoll === 3) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[2]
-   } if (computerRoll === 4) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[3]
-   } if (computerRoll === 5) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[4]
-   } if (computerRoll === 6) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[5]
-   } if (computerRoll === 7) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[6]
-   } if (computerRoll === 8) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[7]
-   } if (computerRoll === 9) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[8]
-   }if (computerRoll === 10) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[9]
-   }if (computerRoll === 11) {
-    document.getElementById('d20-dice-image-two').src = diceImageArray[10]
-   } if (computerRoll === 12) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[11]
-   } if (computerRoll === 13) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[12]
-   } if (computerRoll === 14) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[13]
-   } if (computerRoll === 15) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[14]
-   } if (computerRoll === 16) {
-   document.getElementById('d20-dice-image-two').src = diceImageArray[15]
-   } if (computerRoll === 17) {
-    document.getElementById('d20-dice-image-two').src = diceImageArray[16]
-   } if (computerRoll === 18) {
-    document.getElementById('d20-dice-image-two').src = diceImageArray[17]
-   } if (computerRoll === 19) {
-    document.getElementById('d20-dice-image-two').src = diceImageArray[18]
-   }if (computerRoll === 20) {
-    document.getElementById('d20-dice-image-two').src = diceImageArray[19]
+     if (d20ComputerRoll === 1) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[0];
+   } if (d20ComputerRoll === 2) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[1];
+   } if (d20ComputerRoll === 3) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[2];
+   } if (d20ComputerRoll === 4) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[3];
+   } if (d20ComputerRoll === 5) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[4];
+   } if (d20ComputerRoll === 6) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[5];
+   } if (d20ComputerRoll === 7) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[6];
+   } if (d20ComputerRoll === 8) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[7];
+   } if (d20ComputerRoll === 9) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[8];
+   } if (d20ComputerRoll === 10) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[9];
+   } if (d20ComputerRoll === 11) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[10];
+   } if (d20ComputerRoll === 12) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[11];
+   } if (d20ComputerRoll === 13) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[12];
+   } if (d20ComputerRoll === 14) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[13];
+   } if (d20ComputerRoll === 15) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[14];
+   } if (d20ComputerRoll === 16) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[15];
+   } if (d20ComputerRoll === 17) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[16];
+   } if (d20ComputerRoll === 18) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[17];
+   } if (d20ComputerRoll === 19) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[18];
+   }if (d20ComputerRoll === 20) {
+    document.getElementById('d20-dice-image-two').src = d20DiceImageArray[19];
    }
   
 //determin if player has won or lost d20 game and remove elements to display win or lose message//  
-   if (playerRoll > computerRoll) {
+   if (d20PlayerRoll > d20ComputerRoll) {
        document.getElementById('d20-win-lose-draw').innerHTML = 'Win';
        document.getElementById('d20-player-score').innerHTML = playerScore++;
-   } else if (playerRoll < computerRoll) { 
+   } else if (d20PlayerRoll < d20ComputerRoll) { 
     document.getElementById('d20-win-lose-draw').innerHTML = 'Lose';
     document.getElementById('d20-computer-score').innerHTML = computerScore++;
-   } else if (playerRoll === computerRoll) {
+   } else if (d20PlayerRoll === d20ComputerRoll) {
     document.getElementById('d20-win-lose-draw').innerHTML = 'Draw';
    } if (playerScore === 11) {
     document.getElementById('d20-winner-loser').innerHTML = 'You Win The Game!';
