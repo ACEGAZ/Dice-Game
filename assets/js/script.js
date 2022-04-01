@@ -18,12 +18,12 @@ function playD6Game(){
       
 //d6 images//    
     let d6DiceImageArray = [
-                          img1 = 'assets/images/d6(1).png', 
-                          img2 = 'assets/images/d6(2).png', 
-                          img3 = 'assets/images/d6(3).png', 
-                          img4 = 'assets/images/d6(4).png',
-                          img5 = 'assets/images/d6(5).png',
-                          img6 = 'assets/images/d6(6).png']                    
+                          d6img1 = 'assets/images/d6(1).png', 
+                          d6img2 = 'assets/images/d6(2).png', 
+                          d6img3 = 'assets/images/d6(3).png', 
+                          d6img4 = 'assets/images/d6(4).png',
+                          d6img5 = 'assets/images/d6(5).png',
+                          d6img6 = 'assets/images/d6(6).png'];                    
 
 //display d6 images to player-result div//
      if (d6PlayerRoll === 1) {
@@ -99,16 +99,16 @@ function showhideD10Game() {
   
 //d10 images//    
     let d10DiceImageArray = [
-                          img1 = 'assets/images/d10(1).png', 
-                          img2 = 'assets/images/d10(2).png', 
-                          img3 = 'assets/images/d10(3).png', 
-                          img4 = 'assets/images/d10(4).png',
-                          img5 = 'assets/images/d10(5).png',
-                          img6 = 'assets/images/d10(6).png', 
-                          img7 = 'assets/images/d10(7).png',
-                          img8 = 'assets/images/d10(8).png',
-                          img9 = 'assets/images/d10(9).png',
-                          img10 = 'assets/images/d10(10).png']                  
+                          d10img1 = 'assets/images/d10(1).png', 
+                          d10img2 = 'assets/images/d10(2).png', 
+                          d10img3 = 'assets/images/d10(3).png', 
+                          d10img4 = 'assets/images/d10(4).png',
+                          d10img5 = 'assets/images/d10(5).png',
+                          d10img6 = 'assets/images/d10(6).png', 
+                          d10img7 = 'assets/images/d10(7).png',
+                          d10img8 = 'assets/images/d10(8).png',
+                          d10img9 = 'assets/images/d10(9).png',
+                          d10img10 = 'assets/images/d10(10).png'];                  
 
 //display d10 images to player-result div//
      if (d10PlayerRoll === 1) {
@@ -171,7 +171,7 @@ function showhideD10Game() {
     document.getElementById('d10-player').remove();
     document.getElementById('d10-computer').remove();
     document.getElementById('d10-scores-wrapper').remove();
-    document.getElementById('d10-result-wrapper').remove();;
+    document.getElementById('d10-result-wrapper').remove();
     document.getElementById('d10-win-lose-draw').remove();
    } 
    
@@ -201,26 +201,26 @@ function showhideD20Game() {
      
 //d20 images//
     let d20DiceImageArray = [
-                          img1 = 'assets/images/d20(1).png', 
-                          img2 = 'assets/images/d20(2).png', 
-                          img3 = 'assets/images/d20(3).png', 
-                          img4 = 'assets/images/d20(4).png',
-                          img5 = 'assets/images/d20(5).png',
-                          img6 = 'assets/images/d20(6).png', 
-                          img7 = 'assets/images/d20(7).png',
-                          img8 = 'assets/images/d20(8).png',
-                          img9 = 'assets/images/d20(9).png',
-                          img10 = 'assets/images/d20(10).png',
-                          img11 = 'assets/images/d20(11).png', 
-                          img12 = 'assets/images/d20(12).png', 
-                          img13 = 'assets/images/d20(13).png', 
-                          img14 = 'assets/images/d20(14).png',
-                          img15 = 'assets/images/d20(15).png',
-                          img16 = 'assets/images/d20(16).png', 
-                          img17 = 'assets/images/d20(17).png',
-                          img18 = 'assets/images/d20(18).png',
-                          img19 = 'assets/images/d20(19).png',
-                          img20 = 'assets/images/d20(20).png']                  
+                          d20img1 = 'assets/images/d20(1).png', 
+                          d20img2 = 'assets/images/d20(2).png', 
+                          d20img3 = 'assets/images/d20(3).png', 
+                          d20img4 = 'assets/images/d20(4).png',
+                          d20img5 = 'assets/images/d20(5).png',
+                          d20img6 = 'assets/images/d20(6).png', 
+                          d20img7 = 'assets/images/d20(7).png',
+                          d20img8 = 'assets/images/d20(8).png',
+                          d20img9 = 'assets/images/d20(9).png',
+                          d20img10 = 'assets/images/d20(10).png',
+                          d20img11 = 'assets/images/d20(11).png', 
+                          d20img12 = 'assets/images/d20(12).png', 
+                          d20img13 = 'assets/images/d20(13).png', 
+                          d20img14 = 'assets/images/d20(14).png',
+                          d20img15 = 'assets/images/d20(15).png',
+                          d20img16 = 'assets/images/d20(16).png', 
+                          d20img17 = 'assets/images/d20(17).png',
+                          d20img18 = 'assets/images/d20(18).png',
+                          d20img19 = 'assets/images/d20(19).png',
+                          d20img20 = 'assets/images/d20(20).png'];                 
 
 //display d20 images to player-result div//
      if (d20PlayerRoll === 1) {
@@ -323,7 +323,7 @@ function showhideD20Game() {
     document.getElementById('d20-player').remove();
     document.getElementById('d20-computer').remove();
     document.getElementById('d20-scores-wrapper').remove();
-    document.getElementById('d20-result-wrapper').remove();;
+    document.getElementById('d20-result-wrapper').remove();
     document.getElementById('d20-win-lose-draw').remove();
    } 
    
@@ -340,5 +340,5 @@ function showhideD20Game() {
 
 //reload page to restart the game//
 function restartGame() { 
-    window.location.reload()   
+    window.location.reload();   
    }
