@@ -313,12 +313,12 @@ function playD10Game() {
 
         let d10PlayerText = "";
         for (let i = 0; i < allD10PlayerRolls.length; i++) {
-            d6PlayerText += allD10PlayerRolls[i] + "<br>";
+            d10PlayerText += allD10PlayerRolls[i] + "<br>";
         }
 
         let d10ComputerText = "";
         for (let i = 0; i < allD10ComputerRolls.length; i++) {
-            d6ComputerText += allD10ComputerRolls[i] + "<br>";
+            d10ComputerText += allD10ComputerRolls[i] + "<br>";
         }
 
 
