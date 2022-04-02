@@ -581,6 +581,16 @@ function playD20Game() {
     }
 
     if (computerScore === 11) {
+
+        let d20PlayerText = "";
+        for (let i = 0; i < allD20PlayerRolls.length; i++) {
+            d20PlayerText += allD20PlayerRolls[i] + "<br>";
+        }
+
+        let d20ComputerText = "";
+        for (let i = 0; i < allD20ComputerRolls.length; i++) {
+            d20ComputerText += allD20ComputerRolls[i] + "<br>";
+        }
         document.getElementById('d20-winner-loser').innerHTML = 'You Lose The Game!';
         document.getElementById('d20-your-rolls-text').innerHTML = 'Your Rolls';
         document.getElementById('d20-computer-rolls-text').innerHTML = 'Computer Rolls';
