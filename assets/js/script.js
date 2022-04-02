@@ -21,13 +21,13 @@ let allD6ComputerRolls = [];
 
 //plays d6 dice game //
 function playD6Game() {
-    
+
     let d6PlayerRoll = Math.floor(Math.random() * 6) + 1;
     allD6PlayerRolls.push(d6PlayerRoll);
-   
+
     let d6ComputerRoll = Math.floor(Math.random() * 6) + 1;
     allD6ComputerRolls.push(d6ComputerRoll);
-    
+
     let d6Image1 = document.getElementById('d6-dice-image-one');
     let d6Image2 = document.getElementById('d6-dice-image-two');
 
@@ -104,16 +104,16 @@ function playD6Game() {
         document.getElementById('d6-win-lose-draw').innerHTML = 'Draw';
     }
     if (playerScore === 11) {
-       
-        let d6PlayerText = "";
-for (let i = 0; i < allD6PlayerRolls.length; i++) {
-  d6PlayerText += allD6PlayerRolls[i] + "<br>";
-}
 
-  let d6ComputerText = "";
-for (let i = 0; i < allD6ComputerRolls.length; i++) {
-  d6ComputerText += allD6ComputerRolls[i] + "<br>";
-}
+        let d6PlayerText = "";
+        for (let i = 0; i < allD6PlayerRolls.length; i++) {
+            d6PlayerText += allD6PlayerRolls[i] + "<br>";
+        }
+
+        let d6ComputerText = "";
+        for (let i = 0; i < allD6ComputerRolls.length; i++) {
+            d6ComputerText += allD6ComputerRolls[i] + "<br>";
+        }
         document.getElementById('d6-winner-loser').innerHTML = 'You Win The Game!';
         document.getElementById('d6-your-rolls-text').innerHTML = 'Your Rolls';
         document.getElementById('d6-computer-rolls-text').innerHTML = 'Computer Rolls';
@@ -130,14 +130,14 @@ for (let i = 0; i < allD6ComputerRolls.length; i++) {
     if (computerScore === 11) {
         let d6PlayerText = "";
         for (let i = 0; i < allD6PlayerRolls.length; i++) {
-          d6PlayerText += allD6PlayerRolls[i] + "<br>";
+            d6PlayerText += allD6PlayerRolls[i] + "<br>";
         }
-        
-          let d6ComputerText = "";
+
+        let d6ComputerText = "";
         for (let i = 0; i < allD6ComputerRolls.length; i++) {
-          d6ComputerText += allD6ComputerRolls[i] + "<br>";
+            d6ComputerText += allD6ComputerRolls[i] + "<br>";
         }
-        
+
         document.getElementById('d6-winner-loser').innerHTML = 'You Lose The Game!';
         document.getElementById('d6-your-rolls-text').innerHTML = 'Your Rolls';
         document.getElementById('d6-computer-rolls-text').innerHTML = 'Computer Rolls';
@@ -169,7 +169,7 @@ function showhideD10Game() {
 function playD10Game() {
     let d10PlayerRoll = Math.floor(Math.random() * 10) + 1;
     allD10PlayerRolls.push(d10PlayerRoll);
-   
+
     let d10ComputerRoll = Math.floor(Math.random() * 10) + 1;
     allD10ComputerRolls.push(d10ComputerRoll);
     let d10Image1 = document.getElementById('d10-dice-image-one');
@@ -288,14 +288,14 @@ function playD10Game() {
 
         let d10PlayerText = "";
         for (let i = 0; i < allD10PlayerRolls.length; i++) {
-          d10PlayerText += allD10PlayerRolls[i] + "<br>";
+            d10PlayerText += allD10PlayerRolls[i] + "<br>";
         }
-        
-          let d10ComputerText = "";
+
+        let d10ComputerText = "";
         for (let i = 0; i < allD10ComputerRolls.length; i++) {
-          d10ComputerText += allD10ComputerRolls[i] + "<br>";
+            d10ComputerText += allD10ComputerRolls[i] + "<br>";
         }
-        
+
         document.getElementById('d10-winner-loser').innerHTML = 'You Win The Game!';
         document.getElementById('d10-your-rolls-text').innerHTML = 'Your Rolls';
         document.getElementById('d10-computer-rolls-text').innerHTML = 'Computer Rolls';
@@ -313,12 +313,12 @@ function playD10Game() {
 
         let d10PlayerText = "";
         for (let i = 0; i < allD10PlayerRolls.length; i++) {
-          d6PlayerText += allD10PlayerRolls[i] + "<br>";
+            d6PlayerText += allD10PlayerRolls[i] + "<br>";
         }
-        
-          let d10ComputerText = "";
+
+        let d10ComputerText = "";
         for (let i = 0; i < allD10ComputerRolls.length; i++) {
-          d6ComputerText += allD10ComputerRolls[i] + "<br>";
+            d6ComputerText += allD10ComputerRolls[i] + "<br>";
         }
 
 
@@ -338,6 +338,9 @@ function playD10Game() {
 
 //20 sided dice game//
 
+let allD20PlayerRolls = [];
+let allD20ComputerRolls = [];
+
 //show 20 sided dice game and hide start menu//
 function showhideD20Game() {
     document.getElementById('d20-game').style.display = 'block';
@@ -347,7 +350,10 @@ function showhideD20Game() {
 //play d20 dice game//
 function playD20Game() {
     let d20PlayerRoll = Math.floor(Math.random() * 20) + 1;
+    allD20PlayerRolls.push(d20PlayerRoll);
+
     let d20ComputerRoll = Math.floor(Math.random() * 20) + 1;
+    allD20ComputerRolls.push(d20ComputerRoll);
     let d20image1 = document.getElementById('d20-dice-image-one');
     let d20image2 = document.getElementById('d20-dice-image-two');
 
@@ -550,7 +556,22 @@ function playD20Game() {
         document.getElementById('d20-win-lose-draw').innerHTML = 'Draw';
     }
     if (playerScore === 11) {
+
+        let d20PlayerText = "";
+        for (let i = 0; i < allD20PlayerRolls.length; i++) {
+            d20PlayerText += allD20PlayerRolls[i] + "<br>";
+        }
+
+        let d20ComputerText = "";
+        for (let i = 0; i < allD20ComputerRolls.length; i++) {
+            d20ComputerText += allD20ComputerRolls[i] + "<br>";
+        }
+
         document.getElementById('d20-winner-loser').innerHTML = 'You Win The Game!';
+        document.getElementById('d20-your-rolls-text').innerHTML = 'Your Rolls';
+        document.getElementById('d20-computer-rolls-text').innerHTML = 'Computer Rolls';
+        document.getElementById('d20-all-player-rolls').innerHTML = d20PlayerText;
+        document.getElementById('d20-all-computer-rolls').innerHTML = d20ComputerText;
         document.getElementById('d20-roll-button').remove();
         document.getElementById('d20-player').remove();
         document.getElementById('d20-computer').remove();
@@ -561,6 +582,10 @@ function playD20Game() {
 
     if (computerScore === 11) {
         document.getElementById('d20-winner-loser').innerHTML = 'You Lose The Game!';
+        document.getElementById('d20-your-rolls-text').innerHTML = 'Your Rolls';
+        document.getElementById('d20-computer-rolls-text').innerHTML = 'Computer Rolls';
+        document.getElementById('d20-all-player-rolls').innerHTML = d20PlayerText;
+        document.getElementById('d20-all-computer-rolls').innerHTML = d20ComputerText;
         document.getElementById('d20-roll-button').remove();
         document.getElementById('d20-player').remove();
         document.getElementById('d20-computer').remove();

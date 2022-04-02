@@ -100,7 +100,9 @@ button {
 }
 
 /*your-rolls-text for all games*/
-#d6-your-rolls-text, #d10-your-rolls-text, #d20-your-rolls-text {
+#d6-your-rolls-text,
+#d10-your-rolls-text,
+#d20-your-rolls-text {
     margin-right: 150px;
 }
 
