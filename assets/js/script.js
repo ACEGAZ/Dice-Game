@@ -4,18 +4,30 @@ let computerScore = 1;
 
 
 
-//6 sided dice game//
+//show 6 sided dice game and hide start menu//
 function showhideD6Game() {
     document.getElementById('d6-game').style.display = 'block';
     document.getElementById('start-menu').style.display = 'none';
 }
 
-//play d6 game//
+//d6 game//
 
-//show 6 sided dice game and hide start menu//
+//empty arrayss to collect dice rolls for display at end of game//
+
+let allD6PlayerRolls = [];
+let allD6ComputerRolls = [];
+
+
+
+//plays d6 dice game //
 function playD6Game() {
+    
     let d6PlayerRoll = Math.floor(Math.random() * 6) + 1;
+    allD6PlayerRolls.push(d6PlayerRoll);
+   
     let d6ComputerRoll = Math.floor(Math.random() * 6) + 1;
+    allD6ComputerRolls.push(d6ComputerRoll);
+    
     let d6Image1 = document.getElementById('d6-dice-image-one');
     let d6Image2 = document.getElementById('d6-dice-image-two');
 
@@ -81,7 +93,7 @@ function playD6Game() {
         d6Image2.src = d6DiceImageArray[5];
     }
 
-    //determin if player has won or lost d6 game and remove elements to display win or lose message//
+    //determin if player has won or lost d6 game and removes elements to display win or lose message//
     if (d6PlayerRoll > d6ComputerRoll) {
         document.getElementById('d6-win-lose-draw').innerHTML = 'Win';
         document.getElementById('d6-player-score').innerHTML = playerScore++;
@@ -92,7 +104,21 @@ function playD6Game() {
         document.getElementById('d6-win-lose-draw').innerHTML = 'Draw';
     }
     if (playerScore === 11) {
+       
+        let d6PlayerText = "";
+for (let i = 0; i < allD6PlayerRolls.length; i++) {
+  d6PlayerText += allD6PlayerRolls[i] + "<br>";
+}
+
+  let d6ComputerText = "";
+for (let i = 0; i < allD6ComputerRolls.length; i++) {
+  d6ComputerText += allD6ComputerRolls[i] + "<br>";
+}
         document.getElementById('d6-winner-loser').innerHTML = 'You Win The Game!';
+        document.getElementById('d6-your-rolls-text').innerHTML = 'Your Rolls';
+        document.getElementById('d6-computer-rolls-text').innerHTML = 'Computer Rolls';
+        document.getElementById('d6-all-player-rolls').innerHTML = d6PlayerText;
+        document.getElementById('d6-all-computer-rolls').innerHTML = d6ComputerText;
         document.getElementById('d6-roll-button').remove();
         document.getElementById('d6-player').remove();
         document.getElementById('d6-computer').remove();
@@ -102,7 +128,21 @@ function playD6Game() {
     }
 
     if (computerScore === 11) {
+        let d6PlayerText = "";
+        for (let i = 0; i < allD6PlayerRolls.length; i++) {
+          d6PlayerText += allD6PlayerRolls[i] + "<br>";
+        }
+        
+          let d6ComputerText = "";
+        for (let i = 0; i < allD6ComputerRolls.length; i++) {
+          d6ComputerText += allD6ComputerRolls[i] + "<br>";
+        }
+        
         document.getElementById('d6-winner-loser').innerHTML = 'You Lose The Game!';
+        document.getElementById('d6-your-rolls-text').innerHTML = 'Your Rolls';
+        document.getElementById('d6-computer-rolls-text').innerHTML = 'Computer Rolls';
+        document.getElementById('d6-all-player-rolls').innerHTML = d6PlayerText;
+        document.getElementById('d6-all-computer-rolls').innerHTML = d6ComputerText;
         document.getElementById('d6-roll-button').remove();
         document.getElementById('d6-player').remove();
         document.getElementById('d6-computer').remove();
@@ -120,7 +160,7 @@ function showhideD10Game() {
     document.getElementById('start-menu').style.display = 'none';
 }
 
-//play d10 game//
+//play d10 dice game//
 function playD10Game() {
     let d10PlayerRoll = Math.floor(Math.random() * 10) + 1;
     let d10ComputerRoll = Math.floor(Math.random() * 10) + 1;
@@ -265,7 +305,7 @@ function showhideD20Game() {
     document.getElementById('start-menu').style.display = 'none';
 }
 
-//play d20 game//
+//play d20 dice game//
 function playD20Game() {
     let d20PlayerRoll = Math.floor(Math.random() * 20) + 1;
     let d20ComputerRoll = Math.floor(Math.random() * 20) + 1;
@@ -408,7 +448,7 @@ function playD20Game() {
         d20image2.src = d20DiceImageArray[6];
     }
     if (d20ComputerRoll === 8) {
-        dd20image2.alt = "you rolled a 8";
+        d20image2.alt = "you rolled a 8";
         d20image2.src = d20DiceImageArray[7];
     }
     if (d20ComputerRoll === 9) {

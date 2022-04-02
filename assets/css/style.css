@@ -27,8 +27,8 @@ p {
 /* player and comp wrapper for all games*/
 .all-games-player-wrapper {
     display: inline-flex;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /* player div for all gmaes*/
@@ -91,6 +91,30 @@ button {
 #d10-result-wrapper,
 #d20-result-wrapper {
     display: inline-flex;
+}
+
+/* rolls text wrapper for all games*/
+.rolls-text-wrapper {
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+/*your-rolls-text for all games*/
+#d6-your-rolls-text, #d10-your-rolls-text, #d20-your-rolls-text {
+    margin-right: 150px;
+}
+
+/*all rolls wrapper for all games*/
+.all-rolls-wrapper {
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+/* all player rolls for all games*/
+#d6-all-player-rolls,
+#d10-all-player-rolls,
+#d20-all-player-rolls {
+    margin-right: 320px;
 }
 
 /* images*/
