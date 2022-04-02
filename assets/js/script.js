@@ -12,7 +12,7 @@ function showhideD6Game() {
 
 //d6 game//
 
-//empty arrayss to collect dice rolls for display at end of game//
+//empty arrays to collect d6 dice rolls for display at end of game//
 
 let allD6PlayerRolls = [];
 let allD6ComputerRolls = [];
@@ -154,6 +154,11 @@ for (let i = 0; i < allD6ComputerRolls.length; i++) {
 
 //10 sided dice game//
 
+//empty arrays to collect d10 dice rolls for display at end of game//
+
+let allD10PlayerRolls = [];
+let allD10ComputerRolls = [];
+
 //show 10 sided dice game and hide start menu//
 function showhideD10Game() {
     document.getElementById('d10-game').style.display = 'block';
@@ -163,7 +168,10 @@ function showhideD10Game() {
 //play d10 dice game//
 function playD10Game() {
     let d10PlayerRoll = Math.floor(Math.random() * 10) + 1;
+    allD10PlayerRolls.push(d10PlayerRoll);
+   
     let d10ComputerRoll = Math.floor(Math.random() * 10) + 1;
+    allD10ComputerRolls.push(d10ComputerRoll);
     let d10Image1 = document.getElementById('d10-dice-image-one');
     let d10Image2 = document.getElementById('d10-dice-image-two');
 
@@ -277,7 +285,22 @@ function playD10Game() {
         document.getElementById('d10-win-lose-draw').innerHTML = 'Draw';
     }
     if (playerScore === 11) {
+
+        let d10PlayerText = "";
+        for (let i = 0; i < allD10PlayerRolls.length; i++) {
+          d10PlayerText += allD10PlayerRolls[i] + "<br>";
+        }
+        
+          let d10ComputerText = "";
+        for (let i = 0; i < allD10ComputerRolls.length; i++) {
+          d10ComputerText += allD10ComputerRolls[i] + "<br>";
+        }
+        
         document.getElementById('d10-winner-loser').innerHTML = 'You Win The Game!';
+        document.getElementById('d10-your-rolls-text').innerHTML = 'Your Rolls';
+        document.getElementById('d10-computer-rolls-text').innerHTML = 'Computer Rolls';
+        document.getElementById('d10-all-player-rolls').innerHTML = d10PlayerText;
+        document.getElementById('d10-all-computer-rolls').innerHTML = d10ComputerText;
         document.getElementById('d10-roll-button').remove();
         document.getElementById('d10-player').remove();
         document.getElementById('d10-computer').remove();
@@ -287,7 +310,23 @@ function playD10Game() {
     }
 
     if (computerScore === 11) {
+
+        let d10PlayerText = "";
+        for (let i = 0; i < allD10PlayerRolls.length; i++) {
+          d6PlayerText += allD10PlayerRolls[i] + "<br>";
+        }
+        
+          let d10ComputerText = "";
+        for (let i = 0; i < allD10ComputerRolls.length; i++) {
+          d6ComputerText += allD10ComputerRolls[i] + "<br>";
+        }
+
+
         document.getElementById('d10-winner-loser').innerHTML = 'You Lose The Game!';
+        document.getElementById('d10-your-rolls-text').innerHTML = 'Your Rolls';
+        document.getElementById('d10-computer-rolls-text').innerHTML = 'Computer Rolls';
+        document.getElementById('d10-all-player-rolls').innerHTML = d10PlayerText;
+        document.getElementById('d10-all-computer-rolls').innerHTML = d10ComputerText;
         document.getElementById('d10-roll-button').remove();
         document.getElementById('d10-player').remove();
         document.getElementById('d10-computer').remove();
