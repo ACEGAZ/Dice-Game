@@ -103,7 +103,7 @@ button {
 #d6-your-rolls-text,
 #d10-your-rolls-text,
 #d20-your-rolls-text {
-    margin-right: 150px;
+    margin-right: 50px;
 }
 
 /*all rolls wrapper for all games*/
@@ -116,7 +116,7 @@ button {
 #d6-all-player-rolls,
 #d10-all-player-rolls,
 #d20-all-player-rolls {
-    margin-right: 320px;
+    margin-right: 150px;
 }
 
 /* images*/
